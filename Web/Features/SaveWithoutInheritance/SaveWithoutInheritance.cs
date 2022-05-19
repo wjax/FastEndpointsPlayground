@@ -6,7 +6,7 @@ public class SaveWithoutInheritance : Endpoint<Request>
     {
         Put("Test/SaveWithoutInheritance");
         AllowAnonymous();
-        Summary(summary => summary.Description = $"This is testing {nameof(SaveWithoutInheritance)}'");
+        Summary(summary => summary.Description = $"This is testing '{nameof(SaveWithoutInheritance)}'");
     }
 
     public override async Task HandleAsync(Request req, CancellationToken ct)
