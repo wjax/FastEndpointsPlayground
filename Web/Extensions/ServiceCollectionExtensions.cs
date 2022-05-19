@@ -5,7 +5,7 @@ namespace Web.Extensions;
 
 public static class ServiceCollectionExtensions
 {
-    public static void AddClosureSwaggerDoc(this IServiceCollection services)
+    public static void AddSwaggerDocWithVersions(this IServiceCollection services)
     {
         services
             .AddSwaggerDoc(maxEndpointVersion: 1, addJWTBearerAuth: true, shortSchemaNames:true, tagIndex: 2, settings: s => { SetDefaults(s, 1); })

@@ -1,5 +1,4 @@
-﻿using FastEndpoints;
-using Microsoft.AspNetCore.Rewrite;
+﻿using Microsoft.AspNetCore.Rewrite;
 
 namespace Web.Extensions;
 

@@ -1,10 +1,9 @@
-using FastEndpoints;
 using FastEndpoints.Swagger;
 using Web.Extensions;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddFastEndpoints();
-builder.Services.AddClosureSwaggerDoc();
+builder.Services.AddSwaggerDocWithVersions();
 
 // Service Dependency Injection
 
