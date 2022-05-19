@@ -9,6 +9,7 @@ builder.Services.AddSwaggerDocWithVersions();
 
 // App Configuration
 var app = builder.Build();
+app.UseAuthorization();
 app.UseFastEndpointsAndConfigurations();
 app.UseOpenApi();
 app.UseSwaggerUi3(s => s.ConfigureDefaults());

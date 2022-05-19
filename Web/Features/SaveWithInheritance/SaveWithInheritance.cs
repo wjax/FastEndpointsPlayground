@@ -5,7 +5,7 @@ public class SaveWithInheritance  : Endpoint<Request>
     public override void Configure()
     {
         Put("Test/SaveWithInheritance");
-        base.Configure();
+        AllowAnonymous();
         Summary(summary => summary.Description = $"This is testing {nameof(SaveWithInheritance)}'");
     }
 
