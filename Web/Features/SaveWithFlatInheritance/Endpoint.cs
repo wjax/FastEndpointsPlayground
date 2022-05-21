@@ -4,7 +4,7 @@ public class SaveWithInheritance  : Endpoint<Request>
 {
     public override void Configure()
     {
-        Put("Test/SaveWithInheritance");
+        Put("Test/SaveWithFlatInheritance");
         AllowAnonymous();
         Summary(summary => summary.Description = $"This is testing '{nameof(SaveWithInheritance)}'");
     }
@@ -32,6 +32,6 @@ public class RequestValidator : Validator<Request>
     {
         RuleFor(x => x.Identifier).NotEmpty();
         RuleFor(x => x.NullableIdentifier).NotEmpty();
-        RuleFor(x => x.Message).Length(3, 100);
+        RuleFor(x => x.Message).NotEmpty().Length(3, 100);
     }
 }
