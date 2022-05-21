@@ -1,4 +1,4 @@
-﻿namespace Web.Features.SaveWithInheritance;
+﻿namespace Web.Features.SaveWithFlatInheritance;
 
 public class SaveWithInheritance  : Endpoint<Request>
 {
