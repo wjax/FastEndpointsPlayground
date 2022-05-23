@@ -18,5 +18,6 @@ public static class ServiceCollectionExtensions
         s.DocumentName = $"v{version}";
         s.Version = $"v{version}.0";
         s.GenerateEnumMappingDescription = true;
+        s.FlattenInheritanceHierarchy = false;
     }
 }

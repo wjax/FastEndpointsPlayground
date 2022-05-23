@@ -2,6 +2,10 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web", "Web\Web.csproj", "{1CD3E67A-BA87-444C-B1EF-1EE646A204B0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpoints", "..\FastEndpoints\Src\Library\FastEndpoints.csproj", "{4D4F1219-83A8-4FDC-BBD1-8BC42F7AF314}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastEndpoints.Swagger", "..\FastEndpoints\Src\Swagger\FastEndpoints.Swagger.csproj", "{21BB3D36-9C56-400B-8BAC-E5E30FBC4083}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -12,5 +16,13 @@ Global
 		{1CD3E67A-BA87-444C-B1EF-1EE646A204B0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1CD3E67A-BA87-444C-B1EF-1EE646A204B0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1CD3E67A-BA87-444C-B1EF-1EE646A204B0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4D4F1219-83A8-4FDC-BBD1-8BC42F7AF314}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4D4F1219-83A8-4FDC-BBD1-8BC42F7AF314}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4D4F1219-83A8-4FDC-BBD1-8BC42F7AF314}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4D4F1219-83A8-4FDC-BBD1-8BC42F7AF314}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21BB3D36-9C56-400B-8BAC-E5E30FBC4083}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21BB3D36-9C56-400B-8BAC-E5E30FBC4083}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21BB3D36-9C56-400B-8BAC-E5E30FBC4083}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21BB3D36-9C56-400B-8BAC-E5E30FBC4083}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

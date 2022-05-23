@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Rewrite;
+﻿using System.Text.Json;
+using Microsoft.AspNetCore.Rewrite;
 
 namespace Web.Extensions;
 
