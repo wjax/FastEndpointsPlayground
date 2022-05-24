@@ -18,6 +18,7 @@ public class SaveWithCompositionAndHierachyComplex  : Endpoint<Request>
 public class Request : BaseRequest
 {
     public string? requestIdOriginallyCamelCase { get; set; }
+    public string duplicatedRuleProperty { get; set; }
     public ChildObject Child{ get; set; }
     public ChildObjectWithInheritance ChildWithInheritance{ get; set; }
     public ChildObjectForSetValidator ChildObjectForSetValidator { get; set; }
@@ -86,10 +87,12 @@ public class RequestValidator : Validator<Request>
         RuleFor(x => x.ChildBase.Message).NotEmpty();
         RuleFor(x => x.childBaseWithInheritance.MessageChildBaseWithInheritance).NotEmpty();
         RuleFor(x => x.childBaseWithInheritance.ChildBaseMesageBase).NotEmpty();
-        RuleFor(x => x.ChildWithInheritance.ChildBaseMesage).MinimumLength(120);
+        RuleFor(x => x.ChildWithInheritance.ChildBaseMesage).MinimumLength(120); ;
         RuleFor(x => x.ChildObjectForSetValidator).SetValidator(new ChildObjectForSetValidatorValidator());
         RuleFor(x => x.childBaseObjectForSetValidator).SetValidator(new ChildBaseObjectForSetValidatorValidator());
-
+        
+        RuleFor(x => x.duplicatedRuleProperty).NotEmpty();
+        RuleFor(x => x.duplicatedRuleProperty).MaximumLength(101);
     }
 }
 
